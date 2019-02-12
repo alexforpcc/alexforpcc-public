@@ -307,7 +307,7 @@ h1.title {
    background-size:cover;
 }
 
-.alex-pic {background:url("../../assets/img/alex-portait.jpg");background-size: cover;background-position: center  center;}
+.alex-pic {background:url("../../assets/img/alex-portait.jpg");background-size: cover;background-position: top  center;}
 .equity {background:url("../../assets/gfx/equity.png");background-size: cover;background-position: center  center;}
 .money {background:url("../../assets/gfx/money.png");background-size: cover;background-position: center  center;}
 .community {background:url("../../assets/gfx/community.png");background-size: cover;background-position: center  center;}
@@ -637,6 +637,10 @@ footer {
 @media screen and (max-width:$max-width) {
    .blocker {
       padding-top:0 !important;
+   }
+   
+   .modal {
+      min-height:100%;
    }
 }
 
