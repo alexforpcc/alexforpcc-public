@@ -1,0 +1,653 @@
+@import 'functions';
+
+html {
+   scroll-behavior: smooth;
+   padding:0;
+   margin:0;
+}
+
+body {
+   margin:0;
+   padding:0;
+}
+
+.even {background:rgb(250, 250, 250);}
+.odd {background:#FFF;}
+
+
+#priorities .two-collumn-profile, #priorities .two-collumn-picture, #priorities .two-collumn-text {
+   height:320px;
+   margin-bottom:70px;
+}
+
+#supporters {
+      ul li {
+         font-family:"Poppins", sans-serif;
+         font-size:15px;
+         color:$DarkGray;
+      }
+}
+
+section {
+   padding:150px 0px;
+}
+
+.btn {
+   text-decoration: none;
+   // width:100%;
+   background: #FFF;
+   display:block;
+   text-align: center;
+   padding:15px 0px;
+   color:$Grays;
+   font-family:"Poppins", sans-serif;
+   background:#FFF;
+   font-weight:500;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   border:3px solid $LightGray;
+   -webkit-transition:all 0.3s ease-in-out;
+   -moz-transition:all 0.3s ease-in-out;
+   -o-transition:all 0.3s ease-in-out;
+   transition:all 0.3s ease-in-out;
+
+   &:hover {
+      background:$Blue;
+      border:3px solid $Blue;
+      color:#FFF;
+   }
+}
+
+.btn-section {
+   max-width:$max-width/2 !important;
+   margin:auto;
+}
+
+/***** Top Bar *****/
+
+#top-bar {
+   height:$top-bar_height;
+   width:100%;
+
+   .email-top {
+      float:left;
+      line-height:$top-bar_height;
+      margin-left:15px;
+
+      a {
+         text-decoration: none;
+         color:$Gray;
+         font-family:"Poppins", sans-serif;
+         font-size:15px;
+      }
+   }
+
+   .sm-top {
+      line-height:$top-bar_height;
+      margin:10px auto 0px auto;
+      margin-right:15px;
+      text-align: center;
+
+      ul {
+         list-style: none;
+         padding: 0;
+         margin: 0 !important;
+         height:0px;
+
+         li {
+            display:inline-block;
+            margin:0;
+            padding:0;
+            height:60px;
+
+            a img {
+               height:60px;
+               width:60px !important;
+            }
+         }
+      }
+   }
+}
+
+.top-bar_wrapper {
+   max-width:$max-width;
+   height:$top-bar_height;
+   margin:auto;
+}
+
+/***** Header *****/
+
+header {
+   min-height:100px;
+   width:100%;
+   text-align: center;
+
+   #logo {
+      max-width:$max-width;
+      margin:auto;
+      -webkit-transition:all 0.3s ease-in-out;
+      -moz-transition:all 0.3s ease-in-out;
+      -o-transition:all 0.3s ease-in-out;
+      transition:all 0.3s ease-in-out;
+
+      &:hover {
+         box-shadow:$box-shadow;
+      }
+
+      &:active {
+         box-shadow:$box-shadow;
+      }
+   }
+
+   a#donate {
+      z-index:-100;
+      background:$Blue;
+      width:100%;
+      display:inline-block;
+      padding:30px 0px;
+      color:#FFF;
+      text-decoration: none;
+      font-size:17px;
+      font-family:sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing:0.4px;
+      -webkit-transition:all 0.3s ease-in-out;
+      -moz-transition:all 0.3s ease-in-out;
+      -o-transition:all 0.3s ease-in-out;
+      transition:all 0.3s ease-in-out;
+
+      &:hover {
+         background:lighten($Blue, 3%);
+      }
+   }
+}
+
+/***** Navigation *****/
+
+nav {
+   margin-bottom:20px;
+
+   #nav-wrapper {
+      height:$top-bar_height;
+      max-width:$max-width;
+      margin:auto;
+
+      ul {
+         list-style:none;
+         line-height:$top-bar_height;
+         padding-left:0px !important;
+         position: relative;
+         z-index:50 !important;
+
+         li {
+            display:inline-block;
+
+            &:after {
+               content:"|";
+               font-weight:bold;
+               margin-left:20px;
+               color:$LightGray;
+            }
+
+            &:last-child:after {
+               content:none;
+            }
+
+            a {
+               text-decoration: none;
+               font-weight:bold;
+               text-transform: uppercase;
+               padding:0;
+               margin:0 20px;
+               font-size:16px;
+               font-family:sans-serif;
+               color:$DarkGray;
+               -webkit-transition:all 0.3s ease-in-out;
+               -moz-transition:all 0.3s ease-in-out;
+               -o-transition:all 0.3s ease-in-out;
+               transition:all 0.3s ease-in-out;
+
+               &:hover {
+                  color:$Blue !important;
+               }
+            }
+         }
+      }
+   }
+
+   #nav-mobile {
+      display:none;
+      line-height:$top-bar_height;
+      font-size:40px;
+      color:$Grays;
+      padding:0px 30px;
+
+      &:hover {
+         cursor: pointer;
+      }
+   }
+}
+
+/***** #Cover *****/
+#cover {
+   background:url("../../assets/img/alex-with-youth.jpg");
+   background-size: cover;
+   background-position: center;
+   height:500px;
+}
+
+.one-collumn {
+   height:auto;
+   margin:auto;
+   padding:0;
+   max-width:$max-width;
+
+   ul {
+      list-style: none;
+      padding:0;
+
+      li {
+         line-height:40px;
+         text-align:center;
+      }
+   }
+}
+
+.two-collumn {
+   height:auto;
+   margin:0;
+   padding:0;
+
+   h1.title {
+      font-size:5em;
+      text-align: center;
+      padding:0;
+      // margin-bottom:-40px;
+      margin:0px;
+      color:$Gray;
+      font-weight:600;
+      text-transform: uppercase;
+      font-family:"Poppins", sans-serif;
+   }
+}
+
+h1.title {
+   font-size:5em;
+   text-align: center;
+   padding:0 !important;
+   // margin-bottom:-40px;
+   margin:0px;
+   color:$Gray;
+   font-weight:600;
+   text-transform: uppercase;
+   font-family:"Poppins", sans-serif;
+}
+
+.two-collumn-profile {
+   max-width:$max-width;
+   height:400px;
+   background:white;
+   margin:auto;
+   -webkit-transition:all 0.3s ease-in-out;
+   -moz-transition:all 0.3s ease-in-out;
+   -o-transition:all 0.3s ease-in-out;
+   transition:all 0.3s ease-in-out;
+   box-shadow:$box-shadowBefore;
+
+   &:hover {
+      box-shadow:$box-shadow;
+   }
+}
+
+.two-collumn-picture {
+   float:left;
+   height:400px;
+   width:40%;
+   background-size:cover;
+}
+
+.alex-pic {background:url("../../assets/img/alex-portait.jpg");background-size: cover;background-position: center  center;}
+.equity {background:url("../../assets/gfx/equity.png");background-size: cover;background-position: center  center;}
+.money {background:url("../../assets/gfx/money.png");background-size: cover;background-position: center  center;}
+.community {background:url("../../assets/gfx/community.png");background-size: cover;background-position: center  center;}
+
+.two-collumn-text {
+   float:right;
+   height:400px;
+   width:60%;
+   overflow-y: scroll;
+}
+
+.two-info {
+   padding:20px 30px 40px 30px;
+   font-family:"Poppins", sans-serif;
+   font-weight:400 !important;
+
+   h1 {
+      line-height:35px;
+      font-size:22px;
+      color:$DarkGray;
+      padding-bottom:0;
+      margin-bottom:0;
+   }
+
+   h3 {
+      color:$LightGray;
+      padding:0px;
+      margin:0;
+   }
+
+   p {
+      font-size:14px;
+      line-height:25px;
+      color:$Grays;
+   }
+}
+
+.meet-alex_story {
+   height:333px;
+   margin:auto;
+   margin-top:100px;
+   margin-bottom:100px;
+   max-width:$max-width;
+   box-shadow:$box-shadowBefore;
+   -webkit-transition:all 0.3s ease-in-out;
+   -moz-transition:all 0.3s ease-in-out;
+   -o-transition:all 0.3s ease-in-out;
+   transition:all 0.3s ease-in-out;
+
+   &:hover {
+      box-shadow:$box-shadow;
+   }
+
+   &:after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+   .meet-alex_part1-descr {
+      height:300px;
+      width:50%;
+      font-family:"Poppins", sans-serif;
+      font-size:14px;
+      color:$Grays;
+      overflow: auto;
+      line-height:25px;
+   }
+
+   .meet-alex_part1-img {
+      height:333px;
+      width:50%;
+      background:rgb(50, 50, 50);
+   }
+
+   .alex-grad {
+      background:url("../../assets/img/alex-grad.jpg") !important;
+      background-size: cover !important;
+   }
+
+   .alex-youthgrad {
+      background:url("../../assets/img/alex-youthgrad.jpg") !important;
+      background-size: cover !important;
+   }
+}
+
+.descr-wrap {
+   padding:30px 40px;
+}
+
+.left {float:left;}
+.right {float:right;}
+
+footer {
+   width:100%;
+   min-height:auto;
+
+   #alex-footer {
+      background:url("../../assets/img/alex-footer.jpg");
+      background-position: center center;
+      background-size: cover;
+      height:400px;
+      width:100%;
+   }
+
+   #footer-logo {
+      margin:-120px auto;
+      text-align: center;
+      height:auto;
+
+      img {
+         width:90%;
+         max-width:$max-width;
+         -webkit-transition: 0.3s ease-in-out;
+         -moz-transition: 0.3s ease-in-out;
+         -o-transition: 0.3s ease-in-out;
+         transition: 0.3s ease-in-out;
+         box-shadow:$box-shadowBefore;
+
+         &:hover {
+            box-shadow:$box-shadow;
+         }
+      }
+   }
+
+   #footer-info {
+      margin-top:120px;
+      position: relative;
+
+      .footer-info {
+         max-width:$max-width;
+         margin:auto;
+         min-height:$footer-height;
+      }
+
+      #footer-copyright {
+         float:left;
+         margin-left:5%;
+         line-height:$footer-height;
+         font-family:"Poppins", sans-serif;
+         color:$DarkGray;
+      }
+
+      #footer-socialmedia {
+         float:right;
+         margin-right:5%;
+         margin-top:10px;
+
+         ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 !important;
+            height:0px;
+
+            li {
+               display:inline-block;
+               margin:0;
+               padding:0;
+               height:60px;
+
+               a img {
+                  height:60px;
+                  width:60px !important;
+               }
+            }
+         }
+      }
+   }
+}
+
+/****** Responsive CSS ******/
+
+@media screen and (max-width: 725px) {
+   nav #nav-wrapper ul li:after {
+      margin-left:5px !important;
+   }
+
+   nav #nav-wrapper ul li a {
+      margin:0 10px;
+   }
+}
+
+@media screen and (min-width:600px) {
+   #nav-desktop {
+      display:inline-block !important;
+   }
+}
+
+@media screen and (max-width:830px) {
+   .two-collumn {
+      width:95%;
+      margin:auto;
+   }
+
+   .meet-alex_story {
+      width:95%;
+   }
+}
+
+@media screen and (max-width:600px) {
+   #nav-mobile {
+      display:inline-block !important;
+   }
+
+   section {
+      padding:70px 0px 40px 0px;
+   }
+   
+   #supporters.odd {
+      background:#fafafa !important;
+      padding-bottom:40px;
+   }
+
+   .one-collumn ul {
+      padding-left:10%;
+      padding-right:10%;
+      margin-bottom:0px;
+
+      li {
+         text-align: left;
+      }
+   }
+
+   a#donate {
+      padding:25px 0px !important;
+      font-size:.9em !important;
+   }
+
+   #nav-desktop {
+      display:none;
+      box-shadow:$box-shadow-one;
+
+      li {
+         display: block !important;
+         line-height:0px !important;
+
+         &:after {
+            content:"" !important;
+         }
+      }
+
+      li a {
+         background: white !important;
+         display:block;
+         margin:0 !important;
+         padding:50px 0px !important;
+         width:100% !important;
+      }
+   }
+
+   .two-collumn-profile {
+      min-height:400px !important;
+      height:auto !important;
+      box-shadow:0px 0px 0px !important;
+   }
+
+   .two-collumn-picture {
+      float:none;
+      width:100%;
+   }
+
+   .two-collumn-text {
+      float:none;
+      width:100%;
+   }
+
+   .meet-alex_story {
+      height:auto !important;
+      margin-top:0px;
+      margin-bottom:0px;
+      box-shadow:0px 0px 0px !important;
+   }
+
+   .meet-alex_story .meet-alex_part1-descr {
+      float:none !important;
+      width:100%;
+      height:auto !important;
+   }
+
+   .meet-alex_story .meet-alex_part1-img {
+      float:none !important;
+      width:100%;
+
+   }
+
+   h1.title {
+      font-size:3em !important;
+      line-height:70px;
+      padding-bottom:60px !important;
+   }
+
+   #priorities .two-collumn-profile, #priorities .two-collumn-picture, #priorities .two-collumn-text {
+      margin-bottom:0 !important;
+      min-height: 295px;
+      height: auto !important;
+   }
+   
+   .two-collumn, .meet-alex_story {
+      width:100% !important;
+   }
+
+   .btn-section {
+      width:80% !important;
+   }
+   
+   footer #alex-footer {
+      height:200px;
+   }
+   
+   footer #footer-logo {
+      margin:-80px auto;
+   }
+   
+   footer #footer-info {
+      margin-top:80px;
+   }
+   
+   footer #footer-info #footer-socialmedia ul {
+      height:90px !important;
+   }
+   
+   .blocker {
+      background-color:transparent !important;
+      padding-top:0 !important;
+   }
+}
+
+@media screen and (max-width:$max-width) {
+   .blocker {
+      padding-top:0 !important;
+   }
+}
+
+@media screen and (max-width:580px) {
+   footer #footer-info #footer-copyright, footer #footer-info #footer-socialmedia {
+      float:none;
+      text-align: center;
+      margin:auto;
+   }
+}
+
+@-ms-viewport{
+  width: device-width;
+}
