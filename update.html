@@ -5,12 +5,11 @@ permalink: /about/
 <!DOCTYPE html>
 <html>
     <head>
-        <?php 
-          header('Location: https://crispy-pigeon.cloudvent.net/update');
-          exit;
-        ?>
     </head>
     <body>
-        
+        <?php
+          header('Location: https://crispy-pigeon.cloudvent.net/update', true, 301);
+          exit();
+        ?>
     </body>
 </html>
