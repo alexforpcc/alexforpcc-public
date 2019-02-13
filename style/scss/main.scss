@@ -400,6 +400,82 @@ h1.title {
 .left {float:left;}
 .right {float:right;}
 
+.three-collumn-wrap {
+   display:inline-block;
+   margin-left:65px;
+   text-align: center;
+
+   .three-collumn {
+      // width:257px;
+      width:$max-width/2.2;
+      margin-bottom:70px;
+      display: inline-block;
+      background:#FFF;
+      box-shadow:$box-shadowBefore;
+      -webkit-transition:all 0.3s ease-in-out;
+      -moz-transition:all 0.3s ease-in-out;
+      -o-transition:all 0.3s ease-in-out;
+      transition:all 0.3s ease-in-out;
+
+      &:hover {
+         box-shadow:$box-shadow;
+      }
+
+      .three-collumn_pic {
+         background:$Grays;
+         height:250px;
+         width:100%;
+      }
+
+      .three-collumn_text {
+         height:250px;
+         width:100%;
+
+         h3, h4, ul {
+            margin:auto;
+            padding:0;
+            font-family:"Poppins", sans-serif;
+         }
+
+         h3 {
+            text-align: center;
+            font-size:23px;
+            color:$DarkGray;
+            padding:30px 0px 0px 0px;
+         }
+
+         h4 {
+            text-align: center;
+            font-size:14px;
+            padding:0px 0px 10px 0px;
+            color:$Grays;
+         }
+
+         a.btn {
+            width:85%;
+            margin:auto;
+         }
+
+         ul.team-sm {
+            list-style: none;
+            margin:auto;
+            margin-bottom:-10px;
+            text-align: center;
+            padding:0px 0px 10px 0px;
+
+            li {
+               display:inline-block;
+
+               a img {
+                  height:60px;
+                  width:60px;
+               }
+            }
+         }
+      }
+   }
+}
+
 footer {
    width:100%;
    min-height:auto;
@@ -514,9 +590,8 @@ footer {
    section {
       padding:70px 0px 40px 0px;
    }
-   
+
    #supporters.odd {
-      background:#fafafa !important;
       padding-bottom:40px;
    }
 
@@ -603,7 +678,7 @@ footer {
       min-height: 295px;
       height: auto !important;
    }
-   
+
    .two-collumn, .meet-alex_story {
       width:100% !important;
    }
@@ -611,23 +686,23 @@ footer {
    .btn-section {
       width:80% !important;
    }
-   
+
    footer #alex-footer {
       height:200px;
    }
-   
+
    footer #footer-logo {
       margin:-80px auto;
    }
-   
+
    footer #footer-info {
       margin-top:80px;
    }
-   
+
    footer #footer-info #footer-socialmedia ul {
       height:90px !important;
    }
-   
+
    .blocker {
       background-color:transparent !important;
       padding-top:0 !important;
@@ -638,7 +713,7 @@ footer {
    .blocker {
       padding-top:0 !important;
    }
-   
+
    .modal {
       min-height:100%;
    }
