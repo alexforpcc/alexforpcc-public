@@ -15,7 +15,7 @@ body {
 .odd {background:#FFF;}
 
 
-#priorities .two-collumn-profile, #priorities .two-collumn-picture, #priorities .two-collumn-text {
+.pages .two-collumn-profile, .pages .two-collumn-picture, .pages .two-collumn-text {
    height:320px;
    margin-bottom:70px;
 }
@@ -401,107 +401,6 @@ h1.title {
 .left {float:left;}
 .right {float:right;}
 
-.three-collumn-wrap {
-   background:red;
-   min-height:400px;
-
-   .three-collumn {
-      width:31%;
-      background:blue;
-      min-height:400px;
-      display:inline-block;
-      margin-left:15px;
-
-      .three-collumn_pic {
-         background:green;
-         height:200px;
-      }
-
-      .three-collumn_text {
-         background:aqua;
-         height:250px;
-      }
-   }
-}
-
-// .three-collumn-wrap {
-//    // display:inline-block;
-//    // margin-left:65px;
-//    // text-align: center;
-//    background:red;
-//    padding:0 5%;
-//
-//    .three-collumn {
-//       text-align: center;
-//       // width:257px;
-//       width:$max-width/2.3;
-//       margin:0px 0px 30px 20px;
-//       background:#FFF;
-//       box-shadow:$box-shadowBefore;
-//       -webkit-transition:all 0.3s ease-in-out;
-//       -moz-transition:all 0.3s ease-in-out;
-//       -o-transition:all 0.3s ease-in-out;
-//       transition:all 0.3s ease-in-out;
-//       display:inline-block !important;
-//
-//       &:hover {
-//          box-shadow:$box-shadow;
-//       }
-//
-//       .three-collumn_pic {
-//          background:$Grays;
-//          height:250px;
-//          width:100%;
-//       }
-//
-//       .three-collumn_text {
-//          width:100%;
-//          padding-top:30px;
-//          padding-bottom:30px;
-//
-//          h3, h4, ul {
-//             margin:auto;
-//             padding:0;
-//             font-family:"Poppins", sans-serif;
-//          }
-//
-//          h3 {
-//             text-align: center;
-//             font-size:23px;
-//             color:$DarkGray;
-//          }
-//
-//          h4 {
-//             text-align: center;
-//             font-size:14px;
-//             padding:0px 0px 10px 0px;
-//             color:$Grays;
-//          }
-//
-//          a.btn {
-//             width:85%;
-//             margin:auto;
-//          }
-//
-//          ul.team-sm {
-//             list-style: none;
-//             margin:auto;
-//             margin-bottom:-10px;
-//             text-align: center;
-//             padding:0px 0px 10px 0px;
-//
-//             li {
-//                display:inline-block;
-//
-//                a img {
-//                   height:60px;
-//                   width:60px;
-//                }
-//             }
-//          }
-//       }
-//    }
-// }
 
 
 footer {
@@ -701,7 +600,7 @@ footer {
       padding-bottom:60px !important;
    }
 
-   #priorities .two-collumn-profile, #priorities .two-collumn-picture, #priorities .two-collumn-text {
+   .pages .two-collumn-profile, .pages .two-collumn-picture, .pages .two-collumn-text {
       margin-bottom:0 !important;
       min-height: 295px;
       height: auto !important;
