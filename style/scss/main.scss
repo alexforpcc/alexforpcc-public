@@ -64,7 +64,7 @@ body {
 }
 
 section {
-   padding:150px 0px !important;
+   padding:150px 0px;
 }
 
 .btn {
@@ -343,20 +343,27 @@ h1.title {
    background-size:cover;
 }
 
-.alex-pic {background:url("../../assets/img/alex-portait.jpg");background-size: cover;background-position: top  center;}
-.equity {background:url("../../assets/gfx/equity.png");background-size: cover;background-position: center  center;}
-.money {background:url("../../assets/gfx/money.png");background-size: cover;background-position: center  center;}
-.community {background:url("../../assets/gfx/community.png");background-size: cover;background-position: center  center;}
-.sophia {
-   background:url("../../assets/img/sophia-headshot.jpg");
-   background-position: center center;
-   background-size:cover;
+.equity {background:url("../../assets/gfx/equity.png"), $Blue;}
+.money {background:url("../../assets/gfx/money.png"), $Blue;}
+.community {background:url("../../assets/gfx/community.png"), $Blue;}
+.sophia {background:url("../../assets/img/sophia-headshot.jpg");}
+.brian {background:url("../../assets/img/brian-headshot.jpg");}
+
+.alex-pic {
+   background:url("../../assets/img/alex-portait.jpg");
+   background-size: cover;
+   background-position: top  center;
 }
 
-.brian {
-   background:url("../../assets/img/brian-headshot.jpg");
-   background-position: center center;
-   background-size:cover;
+.equity, .money, .community {
+   background-size: contain;
+   background-position: center  center;
+   background-repeat: no-repeat;
+}
+
+ .sophia, .brian {
+   background-size: cover;
+   background-position: center  center;
 }
 
 .two-collumn-text {
@@ -567,7 +574,11 @@ footer {
    }
 
    section {
-      padding:70px 0px 40px 0px;
+      padding:70px 0px 70px 0px;
+   }
+
+   #priorities, #team-alexforpcc {
+      padding-bottom:0px !important;
    }
 
    #supporters.odd {
@@ -685,6 +696,14 @@ footer {
    .blocker {
       background-color:transparent !important;
       padding-top:0 !important;
+   }
+
+   .two-info {
+      padding:50px 10% 50px 10%;
+   }
+
+   .descr-wrap {
+      padding:50px 10%;
    }
 }
 
