@@ -569,6 +569,10 @@ footer {
 }
 
 @media screen and (max-width:600px) {
+   #cover {
+      height:300px;
+   }
+
    #nav-mobile {
       display:inline-block !important;
    }
