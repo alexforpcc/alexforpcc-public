@@ -242,6 +242,7 @@ nav {
    margin:auto;
    padding:0;
    max-width:$max-width;
+   padding:0 5%;
 
    ul {
       list-style: none;
@@ -401,80 +402,107 @@ h1.title {
 .right {float:right;}
 
 .three-collumn-wrap {
-   display:inline-block;
-   margin-left:65px;
-   text-align: center;
+   background:red;
+   min-height:400px;
 
    .three-collumn {
-      // width:257px;
-      width:$max-width/2.2;
-      margin-bottom:70px;
-      display: inline-block;
-      background:#FFF;
-      box-shadow:$box-shadowBefore;
-      -webkit-transition:all 0.3s ease-in-out;
-      -moz-transition:all 0.3s ease-in-out;
-      -o-transition:all 0.3s ease-in-out;
-      transition:all 0.3s ease-in-out;
-
-      &:hover {
-         box-shadow:$box-shadow;
-      }
+      width:31%;
+      background:blue;
+      min-height:400px;
+      display:inline-block;
+      margin-left:15px;
 
       .three-collumn_pic {
-         background:$Grays;
-         height:250px;
-         width:100%;
+         background:green;
+         height:200px;
       }
 
       .three-collumn_text {
+         background:aqua;
          height:250px;
-         width:100%;
-
-         h3, h4, ul {
-            margin:auto;
-            padding:0;
-            font-family:"Poppins", sans-serif;
-         }
-
-         h3 {
-            text-align: center;
-            font-size:23px;
-            color:$DarkGray;
-            padding:30px 0px 0px 0px;
-         }
-
-         h4 {
-            text-align: center;
-            font-size:14px;
-            padding:0px 0px 10px 0px;
-            color:$Grays;
-         }
-
-         a.btn {
-            width:85%;
-            margin:auto;
-         }
-
-         ul.team-sm {
-            list-style: none;
-            margin:auto;
-            margin-bottom:-10px;
-            text-align: center;
-            padding:0px 0px 10px 0px;
-
-            li {
-               display:inline-block;
-
-               a img {
-                  height:60px;
-                  width:60px;
-               }
-            }
-         }
       }
    }
 }
+
+// .three-collumn-wrap {
+//    // display:inline-block;
+//    // margin-left:65px;
+//    // text-align: center;
+//    background:red;
+//    padding:0 5%;
+//
+//    .three-collumn {
+//       text-align: center;
+//       // width:257px;
+//       width:$max-width/2.3;
+//       margin:0px 0px 30px 20px;
+//       background:#FFF;
+//       box-shadow:$box-shadowBefore;
+//       -webkit-transition:all 0.3s ease-in-out;
+//       -moz-transition:all 0.3s ease-in-out;
+//       -o-transition:all 0.3s ease-in-out;
+//       transition:all 0.3s ease-in-out;
+//       display:inline-block !important;
+//
+//       &:hover {
+//          box-shadow:$box-shadow;
+//       }
+//
+//       .three-collumn_pic {
+//          background:$Grays;
+//          height:250px;
+//          width:100%;
+//       }
+//
+//       .three-collumn_text {
+//          width:100%;
+//          padding-top:30px;
+//          padding-bottom:30px;
+//
+//          h3, h4, ul {
+//             margin:auto;
+//             padding:0;
+//             font-family:"Poppins", sans-serif;
+//          }
+//
+//          h3 {
+//             text-align: center;
+//             font-size:23px;
+//             color:$DarkGray;
+//          }
+//
+//          h4 {
+//             text-align: center;
+//             font-size:14px;
+//             padding:0px 0px 10px 0px;
+//             color:$Grays;
+//          }
+//
+//          a.btn {
+//             width:85%;
+//             margin:auto;
+//          }
+//
+//          ul.team-sm {
+//             list-style: none;
+//             margin:auto;
+//             margin-bottom:-10px;
+//             text-align: center;
+//             padding:0px 0px 10px 0px;
+//
+//             li {
+//                display:inline-block;
+//
+//                a img {
+//                   height:60px;
+//                   width:60px;
+//                }
+//             }
+//          }
+//       }
+//    }
+// }
+
 
 footer {
    width:100%;
@@ -596,8 +624,8 @@ footer {
    }
 
    .one-collumn ul {
-      padding-left:10%;
-      padding-right:10%;
+      padding-left:5%;
+      padding-right:5%;
       margin-bottom:0px;
 
       li {
