@@ -64,7 +64,7 @@ body {
 }
 
 section {
-   padding:150px 0px;
+   padding:150px 0px !important;
 }
 
 .btn {
@@ -367,7 +367,7 @@ h1.title {
 }
 
 .two-info {
-   padding:20px 30px 40px 30px;
+   padding:30px 10% 0px 10%;
    font-family:"Poppins", sans-serif;
    font-weight:400 !important;
 
@@ -377,6 +377,7 @@ h1.title {
       color:$DarkGray;
       padding-bottom:0;
       margin-bottom:0;
+      margin-top:0px;
    }
 
    h2 {
@@ -446,7 +447,7 @@ h1.title {
 }
 
 .descr-wrap {
-   padding:30px 40px;
+   padding:10px 8%;
 }
 
 .left {float:left;}
