@@ -4,7 +4,7 @@
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   width: 100%; height: 100%;
-  padding-top:40px;
+  padding:40px 0px;
   overflow: auto;
   z-index: 100;
   // padding: 20px;
@@ -24,53 +24,102 @@
   background-color: transparent;
 }
 .modal {
-  display: none;
-  vertical-align: middle;
-  position: relative;
-  z-index: 100;
-  max-width: $max-width;
-  box-sizing: border-box;
-  width: 100%;
-  background: #fff;
-  padding: 20px 30px;
-  -webkit-box-shadow: $box-shadow;
-  -moz-box-shadow: $box-shadow;
-  -o-box-shadow: $box-shadow;
-  -ms-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
-  font-family:"Poppins", sans-serif;
-  font-size:15px;
-  line-height:25px;
-  text-align: left;
+   display: none;
+   vertical-align: middle;
+   position: relative;
+   z-index: 100;
+   max-width: $max-width;
+   box-sizing: border-box;
+   width: 100%;
+   background: #fff;
+   // padding: 20px 30px;
+   -webkit-box-shadow: $box-shadow;
+   -moz-box-shadow: $box-shadow;
+   -o-box-shadow: $box-shadow;
+   -ms-box-shadow: $box-shadow;
+   box-shadow: $box-shadow;
+   font-family:"Poppins", sans-serif;
+   font-size:15px;
+   line-height:25px;
+   text-align: left;
 
-  p {
-     padding:5px 0px;
-     color:$Grays;
-     font-size:14px;
-  }
+   .modal-body {
+      padding:20px 10% 0px 10%;
+   }
 
-  h1 {
-     text-align: center;
-     padding:20px 0px 10px 0px;
-     color:$DarkGray;
-     line-height:40px;
- }
- ul li {
-    color:$Grays;
-  }
-  a.closing {
-     display: block;
+   .modal-header {
+      padding-top:70px;
+      padding-bottom:40px;
+
+      h1, h2 {color:#FFF;}
+
+      h1 {
+         text-align: center;
+         // padding:20px 0px 10px 0px;
+         // line-height:40px;
+         margin-top:0;
+         text-align: center;
+         font-family:"Poppins", sans-serif;
+         font-size:30px !important;
+         padding-bottom:0 !important;
+      }
+
+      h2 {
+         padding-top:0 !important;
+         text-align: center;
+         font-family:"Poppins", sans-serif;
+         font-size:22px;
+      }
+   }
+
+   p {
+      padding:5px 0px;
+      color:$Grays;
+      font-size:14px;
+   }
+
+   ul.team-sm {
+      list-style: none;
+      padding: 0;
+      margin: 0 !important;
+      text-align: center;
+
+      li {
+         display:inline-block;
+         margin:0;
+         padding:0;
+         height:60px;
+
+         a img {
+            height:60px;
+            width:60px !important;
+         }
+      }
+   }
+
+   ul li {
+      color:$Grays;
+   }
+
+   .closing {
+      display: block;
       width: 100%;
-      background: #CC4E4E;
+      background:darken(#CC4E4E, 3);
       text-align: center;
       color: #FFF;
       text-decoration: none;
       padding: 20px 0px;
- }
+
+      &:hover {
+         background: #CC4E4E;
+      }
+   }
+
 
  img {
    width:100%;
  }
+
 }
 
 .modal a.close-modal {

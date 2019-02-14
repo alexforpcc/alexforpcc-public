@@ -14,42 +14,6 @@ body {
 .even {background:rgb(250, 250, 250);}
 .odd {background:#FFF;}
 
-.modal {
-   ul.team-sm {
-      list-style: none;
-      padding: 0;
-      margin: 0 !important;
-      text-align: center;
-
-      li {
-         display:inline-block;
-         margin:0;
-         padding:0;
-         height:60px;
-
-         a img {
-            height:60px;
-            width:60px !important;
-         }
-      }
-   }
-
-   h1 {
-      text-align: center;
-      font-family:"Poppins", sans-serif;
-      font-size:30px !important;
-      padding-bottom:0 !important;
-   }
-
-   h2 {
-      padding-top:0 !important;
-      text-align: center;
-      color:$Grays;
-      font-family:"Poppins", sans-serif;
-      font-size:22px;
-   }
-}
-
 .pages .two-collumn-profile, .pages .two-collumn-picture, .pages .two-collumn-text {
    height:320px;
    margin-bottom:70px;
@@ -460,8 +424,6 @@ h1.title {
 .left {float:left;}
 .right {float:right;}
 
-
-
 footer {
    width:100%;
    min-height:auto;
@@ -699,7 +661,7 @@ footer {
 
    .blocker {
       background-color:transparent !important;
-      padding-top:0 !important;
+      padding:0 !important;
    }
 
    .two-info {
