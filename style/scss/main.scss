@@ -308,8 +308,41 @@ h1.title {
 }
 
 .equity {background:url("../../assets/gfx/equity.png"), $Blue;}
-.money {background:url("../../assets/gfx/money.png"), $Blue;}
-.community {background:url("../../assets/gfx/community.png"), $Blue;}
+#equity {
+   .modal-head {
+      background:$Blue !important;
+      .modal-pic {
+         background:url("../../assets/gfx/equity-white.png");
+         background-position: center center;
+         background-size: cover;
+      }
+   }
+}
+
+.money {background:url("../../assets/gfx/money.png"), $Green;}
+#money {
+   .modal-head {
+      background:$Green !important;
+      .modal-pic {
+         background:url("../../assets/gfx/money-white.png");
+         background-position: center center;
+         background-size: cover;
+      }
+   }
+}
+
+.community {background:url("../../assets/gfx/community.png"), $Orange;}
+#community {
+   .modal-head {
+      background:$Orange !important;
+      .modal-pic {
+         background:url("../../assets/gfx/community-white.png");
+         background-position: center center;
+         background-size:cover;
+      }
+   }
+}
+
 .sophia {background:url("../../assets/img/sophia-headshot.jpg");}
 .brian {background:url("../../assets/img/brian-headshot.jpg");}
 
@@ -328,6 +361,27 @@ h1.title {
  .sophia, .brian {
    background-size: cover;
    background-position: center  center;
+}
+
+#about-brian .modal-header {
+   background:url("../../assets/img/brian-bg.jpg");
+   background-size: cover;
+   background-position: center;
+
+   .modal-pic {
+      background:url("../../assets/img/brian-headshot.jpg");
+      background-size:cover;
+   }
+}
+
+#about-sophia .modal-header {
+   background-size: cover;
+   background-position: center;
+
+   .modal-pic {
+      background:url("../../assets/img/sophia-headshot.jpg");
+      background-size:cover;
+   }
 }
 
 .two-collumn-text {
