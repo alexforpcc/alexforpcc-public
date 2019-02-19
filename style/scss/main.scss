@@ -238,7 +238,11 @@ nav {
 
 .parallax-window {
    min-height: 500px;
-    background: transparent;
+   background: transparent;
+}
+
+#footer-bg {
+   min-height:400px !important;   
 }
 
 .one-collumn {
