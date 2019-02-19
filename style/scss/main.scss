@@ -307,6 +307,10 @@ h1.title {
    background-size:cover;
 }
 
+#team-alexforpcc .two-collumn-text, #priorities .two-collumn-text {
+   overflow-y:hidden !important;
+}
+
 .equity {background:url("../../assets/gfx/equity.png"), $Blue;}
 #equity {
    .modal-head {
@@ -388,7 +392,7 @@ h1.title {
    float:right;
    height:400px;
    width:60%;
-   overflow-y: scroll;
+   overflow-y: auto;
 }
 
 .two-info {
@@ -483,7 +487,7 @@ footer {
    min-height:auto;
 
    #alex-footer {
-      background:url("../../assets/img/alex-footer.jpg");
+      background:url("../../assets/img/alex-footer-blue.jpg");
       background-position: center center;
       background-size: cover;
       height:400px;
@@ -720,6 +724,10 @@ footer {
 
    .two-info {
       padding:50px 10% 50px 10%;
+   }
+   
+   #meet-alex .two-info {
+      padding:50px 10% 0px 10% !important;
    }
 
    .descr-wrap {
