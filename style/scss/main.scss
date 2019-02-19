@@ -236,6 +236,11 @@ nav {
    height:500px;
 }
 
+.parallax-window {
+   min-height: 500px;
+    background: transparent;
+}
+
 .one-collumn {
    height:auto;
    margin:auto;
@@ -725,7 +730,7 @@ footer {
    .two-info {
       padding:50px 10% 50px 10%;
    }
-   
+
    #meet-alex .two-info {
       padding:50px 10% 0px 10% !important;
    }
