@@ -11,6 +11,10 @@ body {
    padding:0;
 }
 
+#gs-grid .gs-load {
+   display:none !important;
+}
+
 .even {background:rgb(250, 250, 250);}
 .odd {background:#FFF;}
 
@@ -242,7 +246,7 @@ nav {
 }
 
 #footer-bg {
-   min-height:400px !important;   
+   min-height:400px !important;
 }
 
 .one-collumn {
