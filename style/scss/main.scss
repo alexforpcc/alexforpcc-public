@@ -12,7 +12,8 @@ body {
 }
 
 #gs-grid .gs-load {
-   display:none !important;
+   display: none !important;
+   visibility: hidden !important;
 }
 
 .even {background:rgb(250, 250, 250);}
