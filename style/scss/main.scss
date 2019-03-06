@@ -581,15 +581,15 @@ h1.title {
    margin-top:100px;
    margin-bottom:100px;
    max-width:$max-width;
-   box-shadow:$box-shadowBefore;
-   -webkit-transition:all 0.3s ease-in-out;
-   -moz-transition:all 0.3s ease-in-out;
-   -o-transition:all 0.3s ease-in-out;
-   transition:all 0.3s ease-in-out;
+   // box-shadow:$box-shadowBefore;
+   // -webkit-transition:all 0.3s ease-in-out;
+   // -moz-transition:all 0.3s ease-in-out;
+   // -o-transition:all 0.3s ease-in-out;
+   // transition:all 0.3s ease-in-out;
 
-   &:hover {
-      box-shadow:$box-shadow;
-   }
+   // &:hover {
+   //    box-shadow:$box-shadow;
+   // }
 
    &:after {
       content: "";
@@ -610,7 +610,6 @@ h1.title {
    .meet-alex_part1-img {
       height:333px;
       width:50%;
-      background:rgb(50, 50, 50);
    }
 
    .alex-grad {
@@ -622,6 +621,14 @@ h1.title {
       background:url("../../assets/img/alex-youthgrad.jpg") !important;
       background-size: cover !important;
    }
+}
+
+.img-parallax-up {
+   text-align:center;
+   margin-right:auto;
+   margin-left:auto;
+   padding-top:100px;
+   display:block;
 }
 
 .descr-wrap {
@@ -920,6 +927,10 @@ footer {
       float:none;
       text-align: center;
       margin:auto;
+   }
+
+   .img-parallax-up {
+      padding-top:0px !important;
    }
 }
 

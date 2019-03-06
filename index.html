@@ -105,6 +105,24 @@
 				type: 'foreground',
 				direction: 'vertical'
 			});
+			$(".img-parallax-up").paroller({
+				factor: 0.1,            // multiplier for scrolling speed and offset
+				factorXs: -0.1,          // multiplier for scrolling speed and offset if window width is <576px
+				factorSm: 0.2,          // multiplier for scrolling speed and offset if window width is <=768px
+				factorMd: 0.2,          // multiplier for scrolling speed and offset if window width is <=1024px
+				factorLg: 0.3,          // multiplier for scrolling speed and offset if window width is <=1200px
+				type: 'foreground',
+				direction: 'vertical'
+			});
+			$(".img-parallax-down").paroller({
+				factor: -0.1,            // multiplier for scrolling speed and offset
+				factorXs: -0.1,          // multiplier for scrolling speed and offset if window width is <576px
+				factorSm: -0.2,          // multiplier for scrolling speed and offset if window width is <=768px
+				factorMd: -0.2,          // multiplier for scrolling speed and offset if window width is <=1024px
+				factorLg: -0.3,          // multiplier for scrolling speed and offset if window width is <=1200px
+				type: 'foreground',
+				direction: 'vertical'
+			});
 		});
 		</script>
 	</head>
@@ -174,11 +192,14 @@
 							<p class="editable">I have experienced the high cost of higher education and relied on the vital retention/support programs as a first-generation college student. As a student, I witness and hear the struggles that many college students face such a lack of guidance, food insecurity, and raising tuition.</p>
 						</div>
 					</div>
-					<div class="meet-alex_part1-img alex-youthgrad right"></div>
+					<!-- .alex-youthgrad -->
+					<div class="meet-alex_part1-img right">
+						<img class="img-parallax-up" src="assets/gfx/pcc-grad.png" width="70%" style="text-align:center;margin:auto;"/>
+					</div>
 				</div>
 				<div class="meet-alex_story">
-					<div class="meet-alex_part1-img alex-grad left">
-						<img src="" />
+					<div class="meet-alex_part1-img left">
+						<img class="img-parallax-down" src="assets/gfx/world.png" width="70%" style="text-align:center;margin:auto;"/>
 					</div>
 					<div class="meet-alex_part1-descr right">
 						<div class="descr-wrap">
