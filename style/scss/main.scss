@@ -17,13 +17,13 @@ body {
    width:100%;
    height:250px;
    margin-bottom:70px;
-   
+
    &:hover {
       .event-date {
          background:$Orange;
       }
    }
-   
+
    .event-date {
       width:40%;
       height:250px;
@@ -36,12 +36,11 @@ body {
       -moz-transition:all 0.3s ease-in-out;
       -o-transition:all 0.3s ease-in-out;
       transition:all 0.3s ease-in-out;
-      
+
       .event-date-wrap {
-         vertical-align: middle;
-         display: table-cell;
+         margin-top:65px;
       }
-      
+
       .day {
          font-family:inherit;
          font-size:100px;
@@ -51,7 +50,7 @@ body {
          margin:0;
          padding:0;
       }
-      
+
       .month {
          font-size:40px;
          text-align:center;
@@ -60,41 +59,54 @@ body {
          margin:0;
          padding:0;
       }
+
+      .day, .month {
+         line-height:70px !important;
+      }
    }
-   
+
    .event-description {
       width:60%;
       height:250px;
       float:right;
-      
+
       .event-description-wrap {
          padding:5% 5%;
       }
-      
+
       h2.title {
          display:block;
          font-family:"Poppins", sans-serif;
+         color:$DarkGray;
          font-size:25px;
          font-weight:700;
          padding:0;
          margin:0;
          text-transform:uppercase;
       }
-      
+
       .description {
          display:block;
-      }
-      
-      .button {
-         outline:none;
-         border:none;
-         width:100%;
-         background:#FFF;
-         border:3px solid #F4F4F4;
-         color:#969696;
+         line-height:25px;
          font-family:"Poppins", sans-serif;
-         font-size:16px;
-         padding:16px 0px;
+         font-size:13px;
+         color:$Grays;
+      }
+
+      // .button {
+      //    outline:none;
+      //    border:none;
+      //    width:100%;
+      //    background:#FFF;
+      //    border:3px solid #F4F4F4;
+      //    color:#969696;
+      //    font-family:"Poppins", sans-serif;
+      //    font-size:16px;
+      //    padding:16px 0px;
+      // }
+
+      .addeventatc {
+
       }
    }
 }
