@@ -66,6 +66,7 @@ body {
    }
 
    .event-description {
+      background:#FFF;
       width:60%;
       height:250px;
       float:right;
@@ -851,7 +852,25 @@ footer {
       padding:50px 10%;
    }
 
-   
+   .event-item {
+      height:auto;
+
+      .event-date, .event-description {
+         clear:both;
+         float:none;
+         width:100%;
+         height:auto !important;
+      }
+
+      .event-date .event-date-wrap {
+         margin-top: 30px !important;
+         padding: 30px 0px !important;
+      }
+
+      .event-description .event-description-wrap {
+         padding:10% 10% 10% 10% !important;
+      }
+   }
 }
 
 @media screen and (max-width:$max-width) {
