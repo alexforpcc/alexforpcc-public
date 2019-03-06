@@ -79,9 +79,11 @@
 		<!-- jQuery Libraries -->
 		<script src="scripts/parallax.min.js"></script>
 
-		<!-- jQuery Modal -->
+		<!-- jQuery Parallax -->
 		<script src="scripts/parallax.min.js"></script>
+		<script src="scripts/jquery.paroller.min.js"></script>
 
+		<!-- jQuery Modal -->
 		<script src="scripts/jquery.modal.min.js"></script>
 		<link rel="stylesheet" href="style/css/jquery-modal.css" />
 
@@ -93,6 +95,15 @@
 		$(document).ready(function(){
 			$("#nav-mobile").click(function() {
 				$("#nav-desktop").slideToggle( "normal" );
+			});
+			$('h1.title').paroller({
+				factor: 0.1,            // multiplier for scrolling speed and offset
+				factorXs: 0.1,          // multiplier for scrolling speed and offset if window width is <576px
+				factorSm: 0.2,          // multiplier for scrolling speed and offset if window width is <=768px
+				factorMd: 0.2,          // multiplier for scrolling speed and offset if window width is <=1024px
+				factorLg: 0.3,          // multiplier for scrolling speed and offset if window width is <=1200px
+				type: 'foreground',
+				direction: 'vertical'
 			});
 		});
 		</script>
@@ -138,7 +149,7 @@
 			<!-- Meet Alexander -->
 			<section id="meet-alex" class="odd">
 				<div class="two-collumn">
-					<h1 class="title"> Meet Alex </h1>
+					<h1 class="title" id="meet-alexs"> Meet Alex </h1>
 					<div class="two-collumn-profile">
 						<div class="two-collumn-picture alex-pic"></div>
 						<div class="two-collumn-text">
@@ -522,7 +533,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="event-item">
+					<div class="event-item event-over">
 						<div class="event-date">
 							<div class="event-date-wrap">
 								<span class="day">24</span>
@@ -533,6 +544,7 @@
 							<div class="event-description-wrap">
 								<h2 class="title">Campaign Kick - Off</h2>
 								<p class="description">Join us for food, drinks, and community celebration as we kick off our campaign for Portland Community College Board of Directors- Zone 7!</p>
+								<a href="#" class="button">View Recap</a>
 								<div title="Add to Calendar" class="addeventatc">
 								    Add to Calendar
 								    <span class="start">03/20/2019 08:00 AM</span>

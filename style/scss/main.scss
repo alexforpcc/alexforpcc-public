@@ -94,20 +94,49 @@ body {
          color:$Grays;
       }
 
-      // .button {
-      //    outline:none;
-      //    border:none;
-      //    width:100%;
-      //    background:#FFF;
-      //    border:3px solid #F4F4F4;
-      //    color:#969696;
-      //    font-family:"Poppins", sans-serif;
-      //    font-size:16px;
-      //    padding:16px 0px;
-      // }
+      .button {
+         display:none;
+         outline:none;
+         border:none;
+         width:100%;
+         background:#FFF;
+         border:3px solid #F4F4F4;
+         color:#969696;
+         font-family:"Poppins", sans-serif;
+         font-size:15px;
+         text-decoration: none;
+         text-align: center;
+         padding:14px 0px;
+
+         &:hover {
+            background:$Orange;
+            color:#FFF;
+            border:3px solid $Orange;
+         }
+      }
 
       .addeventatc {
 
+      }
+   }
+}
+
+.event-over {
+   .event-date {
+      background:$Gray !important;
+   }
+
+   .event-description-wrap {
+      h2, p.description {
+         color:$Gray !important;
+      }
+
+      .addeventatc {
+         display:none;
+      }
+
+      .button {
+         display:inline-block;
       }
    }
 }
@@ -373,6 +402,7 @@ nav {
    height:auto;
    margin:0;
    padding:0;
+   position: relative;
 
    h1.title {
       font-size:5em;
@@ -409,6 +439,7 @@ h1.title {
    -o-transition:all 0.3s ease-in-out;
    transition:all 0.3s ease-in-out;
    box-shadow:$box-shadowBefore;
+   position: relative;
 
    &:hover {
       box-shadow:$box-shadow;
@@ -854,6 +885,7 @@ footer {
 
    .event-item {
       height:auto;
+      position: relative;
 
       .event-date, .event-description {
          clear:both;
