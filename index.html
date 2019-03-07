@@ -17,7 +17,7 @@
 
 	Nice to meet you, and hope to work on a project with you!
 -->
-<html>
+<html lang="en">
 	<head>
 		<!-- Title -->
 		<title> Alex for PCC </title>
@@ -90,14 +90,21 @@
 		<!-- AddEvent script -->
 		<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
+		<!-- jQuery UI -->
+		<link rel="stylesheet" type="text/css" href="libs/jquery-ui/css/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="libs/jquery-ui/css/jquery-ui.theme.css" />
+		<link rel="stylesheet" type="text/css" href="libs/jquery-ui/css/jquery-ui.structure.css" />
+		<script src="libs/jquery-ui/jquery-ui.min.js"></script>
+
 		<!-- Navigation Activator -->
 		<script>
 		$(document).ready(function(){
 			$("#nav-mobile").click(function() {
 				$("#nav-desktop").slideToggle( "normal" );
 			});
+			$("#support").accordion({heightStyle: "content", collapsible: true});
 			$('h1.title').paroller({
-				factor: 0.3,            // multiplier for scrolling speed and offset
+				factor: 0.1,            // multiplier for scrolling speed and offset
 				factorXs: 0.1,          // multiplier for scrolling speed and offset if window width is <576px
 				factorSm: 0.2,          // multiplier for scrolling speed and offset if window width is <=768px
 				factorMd: 0.2,          // multiplier for scrolling speed and offset if window width is <=1024px
@@ -369,138 +376,67 @@
 				<div class="one-collumn">
 					<h1 class="title">Supporters</h1>
 
-					<div class="editable">
-						<ul>
-							<li>&nbsp;</li>
-							<li><strong>Washington County Commissio</strong><strong>n Chair</strong> Kathryn Harrington</li>
-							<li><strong>Portland Community College <strong>Zone 5&nbsp;</strong>Board Director&nbsp;</strong>Valdez Bravo</li>
-							<li><strong>Mayor of Cornelius </strong>Jeff Dalin</li>
-							<li><strong>Metro Councilor</strong> Juan Carlos Gonzalez&nbsp;</li>
-							<li><strong>Cornelius City Councilor </strong>Luis Hernandez</li>
-							<li><strong>Hillsboro City Councilor</strong> Olivia Alcaire</li>
-							<li><strong>&nbsp;Hillsboro City Councilor</strong> Anthony Martin&nbsp;</li>
-							<li><strong>&nbsp;Hillsboro City Councilor</strong> Kyle Allen&nbsp;</li>
-							<li><strong>Former Hillsboro City</strong> Councilor Olga Acuna</li>
-							<li><strong>Hillsboro School Board Director</strong> Martin Granum</li>
-							<li><strong>Hillsboro School Board Director</strong> Mark Watson</li>
-							<li><strong>Hillsboro School Board Director </strong>Erika Lopez</li>
-							<li><strong>Hillsboro School Board Director</strong> Yadira Martinez</li>
-							<li><strong>Former State Representative</strong>&nbsp;Joesph Gallegos&nbsp;</li>
-							<li><strong>Portland Community College Federation of Faculty &amp; Academic Professio</strong><strong>nals, AFT Local 2277</strong></li>
-							<li>Maria Caballero Rubio, Community Leader</li>
-							<li>Jaime Rodriguez, Community Leader</li>
-							<li>See Eun Kim,Community Leader&nbsp;</li>
-							<li>Hector Hinojosa, Community Leader</li>
-							<li>Nicole Mito Ahern, Hillsboro School District Teacher</li>
-							<li>Ashley Galik, Scappoose School District Teacher</li>
-							<li>Brian Moreno, Co - Founder, Chicanx Apparel LLC.</li>
-							<li>Cristian Tucux Mejia, Portland Community College Student</li>
-							<li>Alejandra Juarez, Portland Community College Student</li>
-							<li>Flor Rios, Portland Community College Student</li>
-							<li>Juan Diego Ramirez, Portland Community College Student</li>
-							<li>Sophia O'Neal, Pacific University Student</li>
-							<li>Miguel Moreno, Executive Director, Willamette Chicano Alliance</li>
-							<li>Agustin Rios, Four Seasons Landscape Maintenance Owner</li>
-							<li>Mar&iacute;a Elena and Orlando Agustin Juarez, La Princesa Owners</li>
-							<li>La Imperial Bakery Owners&nbsp;</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section id="team-alexforpcc" class="even pages">
-				<h1 class="title">Our Team</h1>
-				<!-- Sophia: Intro -->
-				<div class="two-collumn">
-					<div class="two-collumn-profile">
-						<div class="two-collumn-picture sophia"></div>
-						<div class="two-collumn-text">
-							<div class="two-info">
-								<h1 class="editable">Sophia O'Neal</h1>
-								<h2 class="editable">Campaign Manager</h2>
-								<p class="editable">Sophia O&rsquo;Neal, campaign manager for Alex for PCC, is a junior political science major at Pacific University in Forest Grove.</p>
-								<a rel="modal:open" class="btn btn-light" href="#about-sophia">Learn More</a>
-							</div>
+					<div id="support" class="editable">
+						<h3>Elected Officials</h3>
+						<div>
+							<ul>
+								<li><b>Washington County Commission Chair</b> Kathryn Harrington</li>
+								<li><b>Portland Community College Zone 5 Board Director</b> Valdez Bravo</li>
+								<li><b>Mayor of Cornelius</b> Jeff Dalin</li>
+								<li><b>Metro Councilor</b> Juan Carlos Gonzalez</li>
+								<li><b>Cornelius City Councilor</b> Luis Hernandez</li>
+								<li><b>Hillsboro City Councilor</b> Olivia Alcaire</li>
+								<li><b>Hillsboro City Councilor</b> Anthony Martin</li>
+								<li><b>Hillsboro City Councilor</b> Kyle Allen </li>
+								<li><b>Former Hillsboro City Councilor</b> Olga Acuna</li>
+								<li><b>Hillsboro School Board Director</b> Martin Granum</li>
+								<li><b>Hillsboro School Board Director</b> Mark Watson</li>
+								<li><b>Hillsboro School Board Director</b> Erika Lopez</li>
+								<li><b>Hillsboro School Board Director</b> Yadira Martinez</li>
+								<li><b>Former State Representative</b> Joesph Gallegos</li>
+								<li>Portland Community College Federation of Faculty & Academic Professionals, AFT Local 2277</li>
+							</ul>
 						</div>
-					</div>
-				</div>
-
-				<!-- Sophia: Profile -->
-				<div id="about-sophia" class="modal">
-					<div class="modal-header">
-						<!-- Modal Pic -->
-						<div class="modal-pic"></div>
-
-						<h1 class="editable">Sophia O'neal:</h1>
-						<h2 class="editable"> Campaign Manager </h2>
-						<ul class="team-sm">
-							<li><a href="#"><img src="assets/gfx/sm/fb.png" /></a></li>
-							<li><a href="#"><img src="assets/gfx/sm/insta.png" /></a></li>
-							<li><a href="#"><img src="assets/gfx/sm/email.png" /></a></li>
-						</ul>
-					</div>
-
-					<div class="modal-body">
-						<p class="editable">Sophia O’Neal, campaign manager for Alex for PCC, is a junior political science major at Pacific University in Forest Grove. Originally from California, Sophia is a passionate student leader.</p>
-
-						<p class="editable">She has worked for Pacific’s Center for Gender Equity, Student Multicultural Center, as well as College Democrats at the chapter, state, and national levels. In these positions, Sophia has helped organize dozens of events annually on her campus that highlight issues of inequality of gender, sexuality, race, and culture. As a college student, Sophia first-handedly sees the value of including college students in political decision-making.</p>
-
-						<p class="editable">Sophia joined Alex’s campaign because “Alex is the candidate who is genuinely invested in bringing students’ voices and experiences to the forefront of his campaign. He cares about our concerns and passions, and wants to find pragmatic and compassionate solutions to help everyone in the Portland Community College system.”</p>
-					</div>
-					<div class="modal-close">
-						<br />
-						<a href="#" class="closing" rel="modal:close">Close</a>
-			  		</div>
-				</div>
-
-				<!-- Brian: Intro -->
-				<div class="two-collumn">
-					<div class="two-collumn-profile">
-						<div class="two-collumn-picture brian"></div>
-						<div class="two-collumn-text">
-							<div class="two-info">
-								<h1>Brian Moreno</h1>
-								<h2>Web Developer</h2>
-
-								<p>Brian Moreno, Web Developer for Alex for PCC, is Co - Founder of Chicanx Apparel and Communications Director Willamette Chicano Alliance.</p>
-
-								<a href="#about-brian" rel="modal:open" class="btn btn-light">Learn More</a>
-							</div>
+						<h3>Community Leaders</h3>
+						<div>
+							<ul>
+								<li>Maria Caballero Rubio, Community Leader</li>
+								<li>Jaime Rodriguez, Community Leader</li>
+								<li>See Eun Kim,Community Leader</li>
+								<li>Hector Hinojosa, Community Leader</li>
+								<li>Nicole Mito Ahern, Hillsboro School District Teacher</li>
+								<li>Ashley Galik, Scappoose School District Teacher</li>
+							</ul>
 						</div>
-					</div>
-				</div>
-
-				<!-- Brian: Profile -->
-				<div id="about-brian" class="modal">
-					<div class="modal-header">
-						<!-- Modal Pic -->
-						<div class="modal-pic"></div>
-
-						<h1>Brian Moreno:</h1>
-						<h2> Web Developer </h2>
-						<ul class="team-sm">
-							<li><a href="https://www.facebook.com/bmediax/"><img src="assets/gfx/sm/fb.png" /></a></li>
-							<li><a href="https://www.instagram.com/bmediax/"><img src="assets/gfx/sm/insta.png" /></a></li>
-							<li><a href="mailto:contact@bmediax.com"><img src="assets/gfx/sm/email.png" /></a></li>
-						</ul>
-					</div>
-					<div class="modal-body">
-						<p>Brian Moreno, Web Developer for Alex for PCC, is Co - Founder of Chicanx Apparel and Communications Director Willamette Chicano Alliance.</p>
-
-						<p> Brian is a self - taught Web Developer, Photographer and Graphic Designer. He has also been involved in various leadership student groups such as President of Benson Polytechnic High School, and Coordinator of PCC MEChA Cascade.</p>
-
-						<p> While he is not designing interfaces or coding, you can often find him out and about with his trust Canon camera and a good cup of coffee, capturing world's beautiful raw moments.</p>
-
-						<p>Brian joined Alex's campaign because, as he worked with Alex in the Willamette Chicano Alliance, he found inspiring how his dedication to our community, being actively involved in what is going on systemically and socially within our community and being open to hear our community concerns has lead him to strive to make our voices heard.</p>
-					</div>
-					<div class="modal-exit">
-						<br />
-						<a href="#" class="closing" rel="modal:close">Close</a>
+						<h3>Students</h3>
+						<div>
+							<ul>
+								<li>Cristian Tucux Mejia, Portland Community College Student</li>
+								<li>Alejandra Juarez, Portland Community College Student</li>
+								<li>Flor Rios, Portland Community College Student</li>
+								<li>Juan Diego Ramirez, Portland Community College Student</li>
+								<li>Sophia O'Neal, Pacific University Student</li>
+							</ul>
+						</div>
+						<h3>Community Organizations</h3>
+						<div>
+							<li>Miguel Moreno, Executive Director, <a href="https://chicanoalliance.org" target="_blank">Willamette Chicano Alliance</a></li>
+						</div>
+						<h3>Businesses</h3>
+						<div>
+							<ul>
+								<li>Brian Moreno, Co - Founder, <a href="https://chicanxapparel.com" target="_blank">Chicanx Apparel LLC.</a></li>
+								<li>Agustin Rios, <a href="http://fourseasonslm.com/" target="_blank">Four Seasons Landscape Maintenance Owner</a></li>
+								<li>María Elena and Orlando Agustin Juarez, <a href="https://www.yelp.com/biz/la-princesa-hillsboro" target="_blank">La Princesa Owners</a></li>
+								<li><a href="https://panaderiaypastelerialaimperial.com/" target="_blank">La Imperial Bakery Owners</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- Events Section -->
-			<section id="events" class="odd">
+			<section id="events" class="even">
 				<div class="one-collumn">
 					<h1 class="title"> Events </h1>
 
@@ -577,6 +513,97 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="team-alexforpcc" class="odd pages">
+				<h1 class="title">Our Team</h1>
+				<!-- Sophia: Intro -->
+				<div class="two-collumn">
+					<div class="two-collumn-profile">
+						<div class="two-collumn-picture sophia"></div>
+						<div class="two-collumn-text">
+							<div class="two-info">
+								<h1 class="editable">Sophia O'Neal</h1>
+								<h2 class="editable">Campaign Manager</h2>
+								<p class="editable">Sophia O&rsquo;Neal, campaign manager for Alex for PCC, is a junior political science major at Pacific University in Forest Grove.</p>
+								<a rel="modal:open" class="btn btn-light" href="#about-sophia">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Sophia: Profile -->
+				<div id="about-sophia" class="modal">
+					<div class="modal-header">
+						<!-- Modal Pic -->
+						<div class="modal-pic"></div>
+
+						<h1 class="editable">Sophia O'neal:</h1>
+						<h2 class="editable"> Campaign Manager </h2>
+						<ul class="team-sm">
+							<li><a href="#"><img src="assets/gfx/sm/fb.png" /></a></li>
+							<li><a href="#"><img src="assets/gfx/sm/insta.png" /></a></li>
+							<li><a href="#"><img src="assets/gfx/sm/email.png" /></a></li>
+						</ul>
+					</div>
+
+					<div class="modal-body">
+						<p class="editable">Sophia O’Neal, campaign manager for Alex for PCC, is a junior political science major at Pacific University in Forest Grove. Originally from California, Sophia is a passionate student leader.</p>
+
+						<p class="editable">She has worked for Pacific’s Center for Gender Equity, Student Multicultural Center, as well as College Democrats at the chapter, state, and national levels. In these positions, Sophia has helped organize dozens of events annually on her campus that highlight issues of inequality of gender, sexuality, race, and culture. As a college student, Sophia first-handedly sees the value of including college students in political decision-making.</p>
+
+						<p class="editable">Sophia joined Alex’s campaign because “Alex is the candidate who is genuinely invested in bringing students’ voices and experiences to the forefront of his campaign. He cares about our concerns and passions, and wants to find pragmatic and compassionate solutions to help everyone in the Portland Community College system.”</p>
+					</div>
+					<div class="modal-close">
+						<br />
+						<a href="#" class="closing" rel="modal:close">Close</a>
+			  		</div>
+				</div>
+
+				<!-- Brian: Intro -->
+				<div class="two-collumn">
+					<div class="two-collumn-profile">
+						<div class="two-collumn-picture brian"></div>
+						<div class="two-collumn-text">
+							<div class="two-info">
+								<h1>Brian Moreno</h1>
+								<h2>Web Developer</h2>
+
+								<p>Brian Moreno, Web Developer for Alex for PCC, is Co - Founder of Chicanx Apparel and Communications Director Willamette Chicano Alliance.</p>
+
+								<a href="#about-brian" rel="modal:open" class="btn btn-light">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Brian: Profile -->
+				<div id="about-brian" class="modal">
+					<div class="modal-header">
+						<!-- Modal Pic -->
+						<div class="modal-pic"></div>
+
+						<h1>Brian Moreno:</h1>
+						<h2> Web Developer </h2>
+						<ul class="team-sm">
+							<li><a href="https://www.facebook.com/bmediax/"><img src="assets/gfx/sm/fb.png" /></a></li>
+							<li><a href="https://www.instagram.com/bmediax/"><img src="assets/gfx/sm/insta.png" /></a></li>
+							<li><a href="mailto:contact@bmediax.com"><img src="assets/gfx/sm/email.png" /></a></li>
+						</ul>
+					</div>
+					<div class="modal-body">
+						<p>Brian Moreno, Web Developer for Alex for PCC, is Co - Founder of Chicanx Apparel and Communications Director Willamette Chicano Alliance.</p>
+
+						<p> Brian is a self - taught Web Developer, Photographer and Graphic Designer. He has also been involved in various leadership student groups such as President of Benson Polytechnic High School, and Coordinator of PCC MEChA Cascade.</p>
+
+						<p> While he is not designing interfaces or coding, you can often find him out and about with his trust Canon camera and a good cup of coffee, capturing world's beautiful raw moments.</p>
+
+						<p>Brian joined Alex's campaign because, as he worked with Alex in the Willamette Chicano Alliance, he found inspiring how his dedication to our community, being actively involved in what is going on systemically and socially within our community and being open to hear our community concerns has lead him to strive to make our voices heard.</p>
+					</div>
+					<div class="modal-exit">
+						<br />
+						<a href="#" class="closing" rel="modal:close">Close</a>
 					</div>
 				</div>
 			</section>
