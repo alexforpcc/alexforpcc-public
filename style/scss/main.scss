@@ -655,6 +655,7 @@ h1.title {
    margin-right:auto;
    margin-left:auto;
    display:block;
+   margin-top:80px !important;
 }
 
 .descr-wrap {
@@ -924,7 +925,11 @@ footer {
          clear:both;
          float:none;
          width:100%;
-         height:auto !important;
+         height:auto;
+      }
+
+      .event-date {
+         min-height:100px !important;
       }
 
       .event-date .event-date-wrap {
